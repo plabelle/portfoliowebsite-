@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/935ae6e1-666e-45d0-9dc0-8eca37fb12bc/resourceGroups/profileapprg/providers/Microsoft.Web/sites/labellepaul",
+    "appService.deploySubpath": "dist\\portfolio-website"
+}

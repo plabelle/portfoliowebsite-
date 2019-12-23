@@ -1,0 +1,163 @@
+<div class="row">
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <div mat-card-avatar class="fa fa-mobile-alt accent-color fa-2x"></div>
+                <mat-card-title>Responsive</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    My approach to responsive web design is to develop applications that respond to the user's behavior
+                    and environment based on screen size, by making use of flexible layouts, flexible images and
+                    cascading style sheet media queries. I like to create one design for all formats (phones, tablets,
+                    desktops, etc.) which is easier to maintain. I believe the best approach is a design that is tested
+                    in a wide range of devices to create uniformity and seamlessness for a good user experience.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <div mat-card-avatar class="fa fa-tablet-alt accent-color fa-2x"></div>
+                <mat-card-title>Web</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    I have worked with the web over the years as it has changed considerably from static information
+                    websites to interactive business applications. Today, the web applications used in a business
+                    environment have evolved to perform a specific function connected to a backend service and usually a
+                    database, and websites and web applications are easily accessible by a browser found on most
+                    devices. In my programming, I make use of Angular, and ASP.Net as my backend service and MSSQL on a
+                    mostly Microsoft Azure stack.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <div mat-card-avatar class="fa fa-desktop accent-color fa-2x"></div>
+                <mat-card-title>Design</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    As a Front-end developer, I believe it is important to understand both design and development to
+                    achieve a successful user-facing product. I always try to keep the user interface simple and
+                    accessible for all users. This includes all aspects of web design, including the interface design,
+                    the content production and graphic design.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+<mat-divider class="my-3"></mat-divider>
+
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-8">
+        <h3>About me</h3>
+        <p>
+            I have been working in IT for more than twenty years in private (corporate) and public service (government)
+            environments. I have been designing websites for several years. I started creating websites in early 2000
+            and have been mostly using Angular since 2018. I have the problem-solving skills honed over years of
+            experience to implement effective and timely solutions, analyze problems, and make recommendations.
+        </p>
+        <p>
+            On the right, I have indicated percentages that reflect the skills I have used for the websites and
+            applications in my portfolio.
+        </p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="mb-3">
+            <strong>HTML5 & CSS3</strong>
+            <span class="float-right">100%</span>
+            <mat-progress-bar value="100"></mat-progress-bar>
+        </div>
+        <div class="mb-3">
+            <strong>Angular</strong>
+            <span class="float-right">60%</span>
+            <mat-progress-bar value="60" color="accent"></mat-progress-bar>
+        </div>
+        <div class="mb-3">
+            <strong>ASP.Net</strong>
+            <span class="float-right">30%</span>
+            <mat-progress-bar value="30" color="warn"></mat-progress-bar>
+        </div>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-3 text-center">
+        <i class="fab fa-adobe fa-10x desktop-color d-none d-md-block"></i>
+    </div>
+    <div class="col-12 col-md-9">
+        <h2><i class="fab fa-desktop desktop-color d-md-none mr-2"></i>Website Design</h2>
+        <p>
+            All websites in my portfolio use HTML5, CSS3 and bootstrap or Angular Material for responsive web design including eCommerce,
+            knowledge base and information websites.
+        </p>
+        <p></p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'Website Design'}" mat-stroked-button>View
+            More</button>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12 col-md-9">
+        <h2><i class="fab fa-angular angular-color d-md-none mr-2"></i>Angular Development</h2>
+        <p> </p>
+        <p>
+            My portfolio includes several open source Angular applications demonstrating testing, rxjs and reactive
+            forms.
+        </p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'Angular'}" mat-stroked-button>View More</button>
+    </div>
+    <div class="col-3 text-center">
+        <i class="fab fa-angular fa-10x angular-color d-none d-md-block"></i>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-3 text-center">
+        <i class="fab fa-microsoft fa-10x net-color d-none d-md-block"></i>
+    </div>
+    <div class="col-12 col-md-9 text-right">
+        <h2>ASP.Net<i class="fab fa-microsoft net-color d-md-none ml-2"></i></h2>
+        <p>
+            My portfolio contains several Net Core applications demonstrating MVC Razor and Rest API application.
+        </p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'ASP.Net'}" mat-stroked-button>View More</button>
+    </div>
+</div>
+<!-- <div class="row mt-5">
+    <div class="col-12 col-md-9 text-right">
+        <h2>NodeJS<i class="fab fa-node-js nodejs-color d-md-none ml-2"></i></h2>
+        <p>Iusto laboriosam vero quae excepturi, dignissimos aut explicabo. Unde sapiente, odio quidem et qui
+            adipisci id hic corporis, aut voluptatum quae consequuntur quisquam, esse accusamus harum?</p>
+        <p>Et pariatur temporibus quas fugit ab, nobis non illum ipsa blanditiis minus suscipit, minima quidem,
+            iusto deleniti aperiam soluta nostrum omnis!</p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'NodeJS'}" mat-stroked-button>View More</button>
+    </div>
+    <div class="col-3 text-center">
+        <i class="fab fa-node-js fa-10x nodejs-color d-none d-md-block"></i>
+    </div>
+</div> -->
+
+<div class="portfolio-preview">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <h2>Recent Apps</h2>
+            <p>
+                Below are images of my most recent applications.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of recentProjects;index as i"
+            [ngClass]="{'col-12 col-sm-4 col-md-4': i < 4, 'col-12 col-sm-6 col-md-3': i >= 3 }">
+            <img class="img-fluid" [src]="item.preview + '/image/image.png'" [alt]="item.name">
+        </div>
+
+        <div class="col-12 mt-3">
+            <button [routerLink]="['/portfolio']" mat-stroked-button>View More</button>
+        </div>
+    </div>
+</div>

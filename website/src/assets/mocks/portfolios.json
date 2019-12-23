@@ -1,0 +1,23 @@
+[{  
+    "id": 1,
+    "name": "Omnifood",
+    "description": "Food Junk online store using HTML5 and CSS",
+    "type": "Website Design",
+    "preview": "https://omnifood.z9.web.core.windows.net/",
+    "github": "https://github.com/plabelle/Omnifood/"
+  }, {
+    "id": 2,
+    "name": "WorldWideImporters",
+    "description": "Single-page shopping site application using Angular 7",
+    "type": "Angular",
+    "preview": "https://worldwideimporters.z9.web.core.windows.net/",
+    "github": "https://github.com/plabelle/WorldWideImporters/"
+  }, {
+    "id": 3,
+    "name": "Recipe List",
+    "description": "Single-page shopping site application using Angular 8",
+    "type": "Angular",
+    "preview": "https://recipelist.z9.web.core.windows.net/",
+    "github": "https://github.com/plabelle/Recipe-Shopping-List"
+
+  }]

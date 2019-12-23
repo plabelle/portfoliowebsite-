@@ -1,0 +1,42 @@
+<mat-card class="filter-card">
+    <mat-card-header>
+        <mat-card-title>
+            <h4>Filter</h4>
+        </mat-card-title>
+    </mat-card-header>
+    <label class="mr-1 font-weight-bold">Type:</label>
+    <mat-radio-group [(ngModel)]="selectedType">
+        <mat-radio-button class="mx-2" value="All">ALL</mat-radio-button>
+        <mat-radio-button *ngFor="let type of types" class="mx-2" [value]="type">{{ type }}</mat-radio-button>
+    </mat-radio-group>
+    <div>{{ selectedType }}</div>
+</mat-card>
+<mat-divider class="my-3"></mat-divider>
+<div @list class="row mb-5" *ngIf="portfolios">
+    <div @items class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let item of portfolios">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <ng-container [ngSwitch]="item.type">
+                        <i class="fab fa-adobe fa-2x desktop-color" *ngSwitchCase="'Website Design'"></i>
+                        <i class="fab fa-angular fa-2x angular-color" *ngSwitchCase="'Angular'"></i>
+                        <i class="fab fa-microsoft fa-2x net-color" *ngSwitchCase="'ASP.Net'"></i>
+                        <i class="fab fa-node-js fa-2x nodejs-color" *ngSwitchCase="'NodeJS'"></i>
+                        <i class="fas fa-question fa-2x" *ngSwitchDefault></i>
+                    </ng-container>
+                </div>
+                <mat-card-title>{{ item.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="item.preview + '/image/image.png'" [alt]="item.name">
+            <mat-card-content>
+                {{ item.description }}
+            </mat-card-content>
+            <mat-card-actions>
+                <a [href]="item.github" >GitHub</a>
+            </mat-card-actions>
+            <mat-card-actions>
+                <a [href]="item.preview" >Visit</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
