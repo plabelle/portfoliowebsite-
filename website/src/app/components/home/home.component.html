@@ -142,7 +142,7 @@
     <div class="row">
         <div *ngFor="let item of recentProjects;index as i"
             [ngClass]="{'col-12 col-sm-4 col-md-4': i < 4, 'col-12 col-sm-6 col-md-3': i >= 3 }">
-            <img class="img-fluid" [src]="item.preview + '/image/image.png'" [alt]="item.name">
+            <img class="img-fluid" [src]="item.preview" [alt]="item.name">
         </div>
 
         <div class="col-12 mt-3">
