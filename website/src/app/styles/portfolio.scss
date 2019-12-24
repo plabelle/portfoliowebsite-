@@ -22,7 +22,7 @@ body {
   background-size: cover;
   background-position: bottom;
   min-height: 200px;
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -87,6 +87,7 @@ body {
 .mat-card {
   color: $body-color;
   background-color: $alt-bg;
+  height: 300px;
 
   .mat-card-header-text {
     margin: 0rem 0.5rem;
