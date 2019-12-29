@@ -135,14 +135,14 @@
         <div class="col-12">
             <h2>Recent Apps</h2>
             <p>
-                Below are images of my most recent applications.
+                Below are images of recent applications.
             </p>
         </div>
     </div>
     <div class="row">
         <div *ngFor="let item of recentProjects;index as i"
             [ngClass]="{'col-12 col-sm-4 col-md-4': i < 4, 'col-12 col-sm-6 col-md-3': i >= 3 }">
-            <img class="img-fluid" [src]="item.preview" [alt]="item.name">
+            <img class="img-fluid" src="https://raw.githubusercontent.com/plabelle/portfoliowebsite/master/portfoliowebsite.png" [alt]="item.name">
         </div>
 
         <div class="col-12 mt-3">
