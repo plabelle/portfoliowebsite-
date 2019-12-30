@@ -140,9 +140,9 @@
         </div>
     </div>
     <div class="row">
-        <div *ngFor="let item of recentProjects;index as i"
-            [ngClass]="{'col-12 col-sm-4 col-md-4': i < 4, 'col-12 col-sm-6 col-md-3': i >= 3 }">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/plabelle/portfoliowebsite/master/portfoliowebsite.png" [alt]="item.name">
+        <div *ngFor="let item of recentProjects | slice:0:3;index as i"
+            class="col-12 col-sm-4 col-md-4">
+            <a [href]="item.homepage"><img class="img-fluid" [src]="'https://raw.githubusercontent.com/plabelle/' + item.name + '/master/' + item.name + '.png'"  height="200px" [alt]="item.name"></a>
         </div>
 
         <div class="col-12 mt-3">

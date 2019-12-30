@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: './assets/mocks/portfolios.json'
+  apiUrl: 'https://api.github.com/users/plabelle/repos'
 };

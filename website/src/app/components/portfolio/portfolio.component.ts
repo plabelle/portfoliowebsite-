@@ -26,6 +26,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PortfolioComponent implements OnInit {
 
   types: string[];
+  sourceNames = {TypeScript: 'Angular', HTML: 'HTML, CSS', 'C#': 'Asp.Net' };
 
   private _selectedType = 'All';
 
@@ -54,8 +55,8 @@ export class PortfolioComponent implements OnInit {
 
   loadPortfolios(selectedType: string): void {
     this.portfolioSvc.get().subscribe(data => {
-      this.types = data.map(p => p.type).filter((value, index, self) => self.indexOf(value) === index);
-      this.portfolios = data.filter(p => p.type === selectedType || selectedType === 'All');
+      this.types = data.map(p => p.language).filter((value, index, self) => self.indexOf(value) === index);
+      this.portfolios = data.filter(p => p.language === selectedType || selectedType === 'All');
     });
   }
 

@@ -7,7 +7,7 @@
     <label class="mr-1 font-weight-bold">Type:</label>
     <mat-radio-group [(ngModel)]="selectedType">
         <mat-radio-button class="mx-2" value="All">ALL</mat-radio-button>
-        <mat-radio-button *ngFor="let type of types" class="mx-2" [value]="type">{{ type }}</mat-radio-button>
+        <mat-radio-button *ngFor="let type of types" class="mx-2" [value]="type">{{sourceNames[type]}}</mat-radio-button>
     </mat-radio-group>
     <div>{{ selectedType }}</div>
 </mat-card>
@@ -17,25 +17,25 @@
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar>
-                    <ng-container [ngSwitch]="item.type">
-                        <i class="fab fa-adobe fa-2x desktop-color" *ngSwitchCase="'Website Design'"></i>
-                        <i class="fab fa-angular fa-2x angular-color" *ngSwitchCase="'Angular'"></i>
-                        <i class="fab fa-microsoft fa-2x net-color" *ngSwitchCase="'ASP.Net'"></i>
+                    <ng-container [ngSwitch]="item.language">
+                        <i class="fab fa-adobe fa-2x desktop-color" *ngSwitchCase="'HTML'"></i>
+                        <i class="fab fa-angular fa-2x angular-color" *ngSwitchCase="'Typescript'"></i>
+                        <i class="fab fa-microsoft fa-2x net-color" *ngSwitchCase="'C#'"></i>
                         <i class="fab fa-node-js fa-2x nodejs-color" *ngSwitchCase="'NodeJS'"></i>
                         <i class="fas fa-question fa-2x" *ngSwitchDefault></i>
                     </ng-container>
                 </div>
                 <mat-card-title>{{ item.name}}</mat-card-title>
             </mat-card-header>
-            <img mat-card-image [src]="item.preview" [alt]="item.name">
+            <img mat-card-image [src]="'https://raw.githubusercontent.com/plabelle/' + item.name + '/master/' + item.name + '.png'"  height="200px" [alt]="item.name">
             <mat-card-content>
                 {{ item.description }}
             </mat-card-content>
             <mat-card-actions>
-                <a [href]="item.github" >GitHub</a>
+                <a [href]="item.html_url" >GitHub</a>
             </mat-card-actions>
             <mat-card-actions>
-                <a [href]="item.preview" >Visit</a>
+                <a [href]="item.homepage" >Visit</a>
             </mat-card-actions>
         </mat-card>
     </div>
