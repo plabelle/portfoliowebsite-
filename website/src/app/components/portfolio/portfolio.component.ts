@@ -26,7 +26,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PortfolioComponent implements OnInit {
 
   types: string[];
-  sourceNames = {TypeScript: 'Angular', HTML: 'HTML, CSS', 'C#': 'Asp.Net' };
+  sourceNames = {TypeScript: 'Angular', HTML: 'HTML5, CSS', 'C#': 'Asp.Net' };
 
   private _selectedType = 'All';
 

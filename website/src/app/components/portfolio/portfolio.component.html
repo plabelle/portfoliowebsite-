@@ -14,12 +14,12 @@
 <mat-divider class="my-3"></mat-divider>
 <div @list class="row mb-5" *ngIf="portfolios">
     <div @items class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let item of portfolios">
-        <mat-card>
+        <mat-card class="contentSize">
             <mat-card-header>
                 <div mat-card-avatar>
                     <ng-container [ngSwitch]="item.language">
                         <i class="fab fa-adobe fa-2x desktop-color" *ngSwitchCase="'HTML'"></i>
-                        <i class="fab fa-angular fa-2x angular-color" *ngSwitchCase="'Typescript'"></i>
+                        <i class="fab fa-angular fa-2x angular-color" *ngSwitchCase="'TypeScript'"></i>
                         <i class="fab fa-microsoft fa-2x net-color" *ngSwitchCase="'C#'"></i>
                         <i class="fab fa-node-js fa-2x nodejs-color" *ngSwitchCase="'NodeJS'"></i>
                         <i class="fas fa-question fa-2x" *ngSwitchDefault></i>
@@ -27,15 +27,12 @@
                 </div>
                 <mat-card-title>{{ item.name}}</mat-card-title>
             </mat-card-header>
-            <img mat-card-image [src]="'https://raw.githubusercontent.com/plabelle/' + item.name + '/master/' + item.name + '.png'"  height="200px" [alt]="item.name">
+            <a [href]="item.homepage" ><img mat-card-image [src]="'https://raw.githubusercontent.com/plabelle/' + item.name + '/master/' + item.name + '.png'" [alt]="item.name"></a>
             <mat-card-content>
                 {{ item.description }}
             </mat-card-content>
             <mat-card-actions>
                 <a [href]="item.html_url" >GitHub</a>
-            </mat-card-actions>
-            <mat-card-actions>
-                <a [href]="item.homepage" >Visit</a>
             </mat-card-actions>
         </mat-card>
     </div>
