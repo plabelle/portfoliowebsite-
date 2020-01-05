@@ -87,10 +87,14 @@ body {
 .mat-card {
   color: $body-color;
   background-color: $alt-bg;
-  height: 300px;
+  height: 200px;
 
   .mat-card-header-text {
     margin: 0rem 0.5rem;
+  }
+
+  .mat-card-image {
+    padding: 0.5rem;
   }
 }
 
