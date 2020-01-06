@@ -87,7 +87,7 @@ body {
 .mat-card {
   color: $body-color;
   background-color: $alt-bg;
-  height: 200px;
+  height: 300px;
 
   .mat-card-header-text {
     margin: 0rem 0.5rem;
@@ -99,6 +99,7 @@ body {
 }
 
 .filter-card {
+  height: 200px;
   .mat-card-header-text {
     margin: 0rem;
   }
