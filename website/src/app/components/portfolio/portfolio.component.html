@@ -12,8 +12,8 @@
     <div>{{ selectedType }}</div>
 </mat-card>
 <mat-divider class="my-3"></mat-divider>
-<div @list class="row mb-5" *ngIf="portfolios">
-    <div @items class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let item of portfolios">
+<div class="row mb-5" *ngIf="portfolios">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let item of portfolios">
         <mat-card class="contentSize">
             <mat-card-header>
                 <div mat-card-avatar>
@@ -32,7 +32,7 @@
                 {{ item.description }}
             </mat-card-content>
             <mat-card-actions>
-                <a [href]="item.html_url" >GitHub</a>
+                <a [href]="item.html_url" >GitHub Webpage</a>
             </mat-card-actions>
         </mat-card>
     </div>
